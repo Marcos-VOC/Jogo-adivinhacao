@@ -46,7 +46,7 @@ jogo-adivinhacao/
 ## 🧠 Conceitos aplicados
 
 ### Estruturas de controle
-Uso de `while`, `if`, `elif`, `else`, `break` e `continue` para controlar o fluxo do jogo — incluindo loops de menu, loops de tentativas e saída antecipada de partidas.
+Uso de `while`, `if`, `elif`, `else`, `break` e `continue` para controlar o fluxo do jogo, incluindo loops de menu, loops de tentativas e saída antecipada de partidas.
 
 ### Funções
 O código é dividido em funções com responsabilidade única (`menu`, `sortear`), seguindo o princípio de separação de responsabilidades e evitando repetição de lógica.
@@ -55,7 +55,7 @@ O código é dividido em funções com responsabilidade única (`menu`, `sortear
 Uso de `try/except` de forma cirúrgica — cobrindo apenas as linhas que podem falhar por razões esperadas, como a conversão de entrada do usuário com `int(input())`. Segue a prática de *narrow except*, capturando exceções específicas (`ValueError`) em vez de blocos genéricos.
 
 ### Exceções customizadas
-Criação de `NumeroForaIntervaloError`, uma exceção própria que herda de `Exception`, utilizada para sinalizar quando o jogador insere um número fora do intervalo válido da dificuldade escolhida — separando erros de tipo (letras) de erros de domínio (número fora do intervalo).
+Criação de `NumeroForaIntervaloError`, uma exceção própria que herda de `Exception`, utilizada para sinalizar quando o jogador insere um número fora do intervalo válido da dificuldade escolhida, separando erros de tipo (letras) de erros de domínio (número fora do intervalo).
 
 ### Listas
 Uso de lista para registrar o histórico de palpites de cada partida, com ordenação via `.sort()` para exibição em ordem crescente a cada rodada.
