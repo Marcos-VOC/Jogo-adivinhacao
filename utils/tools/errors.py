@@ -1,0 +1,2 @@
+class NumeroForaIntervaloError(Exception):
+    pass
